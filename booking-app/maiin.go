@@ -60,7 +60,7 @@ func main() {
 			}
 
 		} else {
-			fmt.Printf("We only have %v remaining tickest. Try again", remainingTickets)
+			fmt.Println("Your input data is invalid. Try again")
 		}
 
 	}
