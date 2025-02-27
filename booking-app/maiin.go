@@ -63,6 +63,7 @@ func bookConf(userTickets uint, firstName string, lastName string, email string)
 	userData["email"] = email
 	userData["tickets"] = strconv.FormatUint(uint64(userTickets), 10)
 	bookings = append(bookings, userData)
+	fmt.Printf("List of bookings is %v", bookings)
 
 	fmt.Printf("Thank you User %v %v for booking %v tickets. We shall send a confirmation email to the address %v \n", firstName, lastName, userTickets, email)
 
