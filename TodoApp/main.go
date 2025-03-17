@@ -8,19 +8,15 @@ var taskThree = "Referesh my skills with Node JS"
 var taskFour = "Take a Break"
 var taskFive = "Go job hunting"
 
+var taskItems = []string{taskOne, taskTwo, taskThree, taskFour, taskFive}
+
 func main() {
 	fmt.Println("###### Welcome to our TodoList App! ######")
 
 	fmt.Println("List of my Todos")
 
-	fmt.Println(taskOne)
-
-	fmt.Println(taskTwo)
-
-	fmt.Println(taskThree)
-
-	fmt.Println(taskFour)
-
-	fmt.Println(taskFive)
+	for _, task := range taskItems {
+		fmt.Println(task)
+	}
 
 }
